@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app>
+<head><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script></head>
+<script>
+alert('How are you?');
+displayName = function(){
+	alert('clicked'); 
+}
+</script>
+<body>
+	<div>
+	<label>Name:</label>
+	<input id="name" type="text" ng-model="yourName" placeholder="Enter your name here"></input>
+	<button onClick=displayName()>Submit</button>
+	<hr>
+	<h1>Hello {{yourName}} !</h1>
+	</div>
+</body>
+</html>
